@@ -90,7 +90,7 @@ export default function Detect() {
       formData.append("file", file);
 
       const response = await axios.post(
-        "http://127.0.0.1:8000/predict",
+        "https://dental-disease-detection-system.onrender.com/predict",
         formData,
         {
           headers: {
@@ -195,7 +195,7 @@ export default function Detect() {
       `Dental_Report_${result.disease}.pdf`
     );
   };
-  
+
   return (
     <div className="min-h-screen bg-slate-950 text-white p-10">
       <h1 className="text-5xl font-bold text-center mb-12">
